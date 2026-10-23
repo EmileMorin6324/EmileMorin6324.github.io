@@ -1,0 +1,64 @@
+{% include '_partials/_header.html' %}
+<div class="hub">
+    <div class="backgroundHub">
+        <video autoplay loop muted src="./assets/video/videoplayback.webm"></video>
+    </div>
+    <div class="wrapper">
+        <div class="hub__content">
+            <div class="textes">
+                <h2>ÉMILE MORIN</h2>
+                <div class="profil">
+                    <h4>Monteur vidéo</h4>
+                    <h4>Concepteur de Medias Interactifs</h4>
+                </div>
+                <p>
+                    Bonjour ! Je suis un étudiant de technique d’intégration multimédia au cegep Édouard Montpetit. Je suis un développeur de médias interactifs
+                    et un monteur vidéo qui adore créer, apprendre et expérimenter.
+                </p>
+            </div>
+            <div class="interactables">
+                <div class="boutons">
+                    <a href="main.html#aPropos" class="button">À propos</a>
+                    <a href="main.html#projets" class="button">Mes projets</a>
+                    <a href="main.html#footer" class="button">Contactez-moi</a>
+                    <a href="https://youtu.be/pDYrUsNvUfU" class="button">Ma vidéo</a>
+                </div>
+                <div class="reseaux">
+                    <a href="https://www.youtube.com/@EmileMorino" class="button">
+                        <svg class="icon">
+                            <use href="#icon-Youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.behance.net/milemorin4" class="button">
+                        <svg class="icon">
+                            <use href="#icon-Behance"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Jean-Michele" class="button">
+                        <svg class="icon">
+                            <use href="#icon-github"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/%C3%A9mile-morin-9a17502b5/?isSelfProfile=true" class="button">
+                        <svg class="icon">
+                            <use href="#icon-Linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hub__media">
+                <img src="./assets/images/backgroundHub.png" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<svg style="display: none; position: absolute; width: 0; height: 0">
+    <defs>
+        <filter id="sketch-filter" x="-10%" y="-10%" width="120%" height="120%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+        </filter>
+    </defs>
+</svg>
+{% include '_partials/_footer.html' %}

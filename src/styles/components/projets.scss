@@ -1,0 +1,22 @@
+.projets {
+    padding: 120px 0;
+    .wrapper {
+        .titre {
+            h2 {
+                font-size: var(--font-size-h1);
+            }
+            position: relative;
+            width: fit-content;
+            height: 70px;
+            margin-bottom: 60px;
+            .icon {
+                display: flex;
+                align-self: center;
+                position: absolute;
+                width: 110%;
+                font-size: 140px;
+                display: block;
+            }
+        }
+    }
+}

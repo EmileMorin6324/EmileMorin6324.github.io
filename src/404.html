@@ -1,0 +1,32 @@
+{% include '_partials/_header.html' %}
+
+<section class="erreur_404">
+    <div class="erreur_404__content">
+        <div class="wrapper">
+            <h1>PAGE NON TROUVÉE</h1>
+            <h2>La page que vous cherchez n'existe pas</h2>
+            <p>Cliquez sur ce bouton pour revenir au hub du site.</p>
+            <a href="index.html" class="button">
+                Revenir
+                <svg class="icon fleche">
+                    <use href="#icon-Fleche2"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="erreur_404__media">
+        <video class="video" autoplay loop muted>
+            <source src="assets/video/videoplayback.webm" type="video/webm" />
+        </video>
+    </div>
+</section>
+<svg style="display: none; position: absolute; width: 0; height: 0">
+    <defs>
+        <filter id="sketch-filter" x="-10%" y="-10%" width="120%" height="120%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+        </filter>
+    </defs>
+</svg>
+
+{% include '_partials/_footer.html' %}
