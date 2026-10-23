@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Émile Morin</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script>
+    </script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header" data-component="Header" data-treshold="0.2">
+        <div class="wrapper">
+            <a class="titre" href="index.html"> ÉMILE <span>MORIN</span> <svg class="icon">
+                    <use href="#icon-SeparateurProjet"></use>
+                </svg></a>
+
+
+            <nav class="nav__menu">
+                <ul>
+                    <li>
+                        <a href="main.html#">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="main.html#projets">Mes projets</a>
+                    </li>
+                    <li>
+                        <a href="main.html#footer">Contactez-moi !</a>
+                    </li>
+                    <div class="infos">
+                        <li>
+                            <a href="https://www.youtube.com/@EmileMorino" class="button" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-Youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/milemorin4" class="button" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-Behance"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Jean-Michele" class="button" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-github"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/%C3%A9mile-morin-9a17502b5/?isSelfProfile=true" class="button" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-Linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+            </nav>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__media">
+            <video class="video" autoplay loop muted>
+                <source src="assets/video/videoplayback.webm" type="video/webm" />
+            </video>
+        </div>
+        <div class="hero__content">
+            <div class="wrapper">
+                <div class="nom">
+                    <h1 class="grosTitre">
+                        Émile
+                        <br />
+                        Morin
+                    </h1>
+
+                    <svg class="icon">
+                        <use href="#icon-LigneHero"></use>
+                    </svg>
+                </div>
+                <h2>
+                    Concepteur de Medias Interactifs
+                    <br />
+                    <span>|</span>
+                    Réalisateur Vidéo
+                </h2>
+
+                <a class="button" href="#projets">Voyez ce que je peux faire</a>
+                <div class="image"><img src="assets/images/moi.webp" alt="" /></div>
+
+                <!-- Inline SVG Filter Defs (Place anywhere in document body once) -->
+                <svg style="display: none; position: absolute; width: 0; height: 0">
+                    <defs>
+                        <filter id="sketch-filter" x="-10%" y="-10%" width="120%" height="120%">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+                            <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="aPropos" id="aPropos">
+        <div class="wrapper">
+            <div class="titre">
+                <h2>Qui suis-je ?</h2>
+                <svg class="icon">
+                    <use href="#icon-LigneTitre"></use>
+                </svg>
+            </div>
+            <div class="informations">
+                <div class="information">
+                    <div class="titre">
+                        <h2>Émile Morin</h2>
+                        <svg class="icon">
+                            <use href="#icon-LigneSection"></use>
+                        </svg>
+                    </div>
+
+                    <div class="profil">
+                        <h4>Monteur Vidéo</h4>
+                        <h4>Concepteur de Médias interactifs</h4>
+                    </div>
+                    <p>
+                        Étudiant en technique d’intégration multimedia, qui n’a pas peur d’affronter des défis.
+                        <br />
+                        J’adore le montage vidéo et la conception de médias intéractifs.
+                    </p>
+                </div>
+                <div class="information">
+                    <div class="titre">
+                        <h2>Compétences</h2>
+                        <svg class="icon">
+                            <use href="#icon-LigneSection"></use>
+                        </svg>
+                    </div>
+                    <div class="competences">
+                        <div class="competence">
+                            <svg class="icon">
+                                <use href="#icon-Fleche1"></use>
+                            </svg>
+                            <h4>Montage vidéo</h4>
+                        </div>
+                        <div class="competence">
+                            <svg class="icon">
+                                <use href="#icon-Fleche2"></use>
+                            </svg>
+                            <h4>Programmation nodale</h4>
+                        </div>
+                        <div class="competence">
+                            <svg class="icon">
+                                <use href="#icon-Fleche3"></use>
+                            </svg>
+                            <h4>Animation 3D</h4>
+                        </div>
+                        <div class="competence">
+                            <svg class="icon">
+                                <use href="#icon-Fleche1"></use>
+                            </svg>
+                            <h4>Résolution de problèmes</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="information reste">
+                    <div class="block">
+                        <div class="titre">
+                            <h2>Qualités</h2>
+                            <svg class="icon">
+                                <use href="#icon-LigneSection"></use>
+                            </svg>
+                        </div>
+                        <div class="competences">
+                            <div class="competence">
+                                <svg class="icon">
+                                    <use href="#icon-Fleche3"></use>
+                                </svg>
+                                <h4>Débrouillard</h4>
+                            </div>
+                            <div class="competence">
+                                <svg class="icon">
+                                    <use href="#icon-Fleche1"></use>
+                                </svg>
+                                <h4>Créatif</h4>
+                            </div>
+                            <div class="competence">
+                                <svg class="icon">
+                                    <use href="#icon-Fleche3"></use>
+                                </svg>
+                                <h4>Organisé</h4>
+                            </div>
+                            <div class="competence">
+                                <svg class="icon">
+                                    <use href="#icon-Fleche1"></use>
+                                </svg>
+                                <h4>Impliqué</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="titre">
+                            <h2>Intérêts</h2>
+                            <svg class="icon">
+                                <use href="#icon-LigneSection"></use>
+                            </svg>
+                        </div>
+                        <div class="competences">
+                            <div class="competence">
+                                <svg class="icon">
+                                    <use href="#icon-Fleche1"></use>
+                                </svg>
+                                <h4>Cuisiner</h4>
+                            </div>
+                            <div class="competence">
+                                <svg class="icon">
+                                    <use href="#icon-Fleche2"></use>
+                                </svg>
+                                <h4>Faire du sport</h4>
+                            </div>
+                            <div class="competence">
+                                <svg class="icon">
+                                    <use href="#icon-Fleche3"></use>
+                                </svg>
+                                <h4>Écouter de la musique</h4>
+                            </div>
+                            <div class="competence">
+                                <svg class="icon">
+                                    <use href="#icon-Fleche1"></use>
+                                </svg>
+                                <h4>Manger</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="titre">
+                            <h2>Mes logiciels</h2>
+                            <svg class="icon">
+                                <use href="#icon-LigneSection"></use>
+                            </svg>
+                        </div>
+                        <div class="logiciels">
+                            <svg class="icon">
+                                <use href="#icon-vscode"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use href="#icon-github"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use href="#icon-blender"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use href="#icon-Premiere"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use href="#icon-AfterEffect"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="boutons">
+                        <a class="button" href="https://youtu.be/pDYrUsNvUfU">Regarder ma vidéo</a>
+                        <a class="button" href="index.html#projets">Regarder mes projets</a>
+                    </div>
+                </div>
+                <div class="photo">
+                    <div class="image">
+                        <img src="assets/images/moi.webp" alt="photo d'Émile Morin" />
+                        <svg class="icon">
+                            <use href="#icon-LigneHero"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projets" id="projets">
+        <div class="wrapper">
+            <div class="titre">
+                <h2>Mes projets</h2>
+                <svg class="icon">
+                    <use href="#icon-LigneTitre"></use>
+                </svg>
+            </div>
+            <div class="cartesProjets">
+                <svg class="icon top">
+                    <use href="#icon-SeparateurProjet"></use>
+                </svg>
+                <div class="carteProjet" onclick="window.open('https://www.behance.net/gallery/256677401/Cration-dune-horloge-interactive', '_blank')">
+                    <div class="content">
+                        <div class="description">
+                            <h3>
+                                CRÉATION D’UNE HORLOGE
+                                <br />
+                                INTERACTIVE SUR TOUCHDESIGNER
+                            </h3>
+                            <h4>Projet réalisé dans le cadre du cours de média interactif</h4>
+                            <a class="button" href="#projets">Voir plus</a>
+                        </div>
+                        <a class="plus">+</a>
+
+                        <img src="assets/images/PizzaClock.webp" alt="" />
+                    </div>
+                </div>
+                <svg class="icon bottom">
+                    <use href="#icon-SeparateurProjet"></use>
+                </svg>
+                <div class="carteProjet" onclick="window.open('https://www.behance.net/gallery/256677089/Cration-dune-projection-interactive', '_blank')">
+                    <div class="content">
+                        <div class="description">
+                            <h3>
+                                PROJET TOUCHDESIGNER
+                                <br />
+                                À PARTIR D'UNE KINECT
+                            </h3>
+                            <h4>Projet réalisé dans le cadre du cours de média interactif</h4>
+                            <a class="button" href="#projets">Voir plus</a>
+                        </div>
+                        <a class="plus">+</a>
+                        <img src="assets/images/Monstruosite.webp" alt="" />
+                    </div>
+                </div>
+                <svg class="icon bottom">
+                    <use href="#icon-SeparateurProjet"></use>
+                </svg>
+                <div class="carteProjet" onclick="window.open('https://www.behance.net/gallery/256676909/Cration-dun-montage-making-of-sur-After-Effect', '_blank')">
+                    <div class="content">
+                        <div class="description">
+                            <h3>
+                                MONTAGE D’UN TRAVAIL
+                                <br />
+                                D’ÉQUIPE SUR AFTER EFFECT
+                            </h3>
+                            <h4>Projet réalisé dans le cadre du cours de montage vidéo</h4>
+                            <a class="button" href="#projets">Voir plus</a>
+                        </div>
+                        <a class="plus">+</a>
+                        <img src="assets/images/MontageEquipe.webp" alt="" />
+                    </div>
+                </div>
+                <svg class="icon bottom">
+                    <use href="#icon-SeparateurProjet"></use>
+                </svg>
+                <div class="carteProjet" onclick="window.open('https://www.behance.net/gallery/256677597/Cration-dune-publicit-dune-installation-interactive', '_blank')">
+                    <div class="content">
+                        <div class="description">
+                            <h3>
+                                MONTAGE DE L’EXPOSITION VILLAGE
+                                <br />
+                                NUMÉRIQUE SUR AFTER EFFECT
+                            </h3>
+                            <h4>Projet réalisé dans le cadre du cours de production interactive</h4>
+                            <a class="button" href="#projets">Voir plus</a>
+                        </div>
+                        <a class="plus">+</a>
+                        <img src="assets/images/VillageNumerique.webp" alt="" />
+                    </div>
+                </div>
+                <svg class="icon bottom">
+                    <use href="#icon-SeparateurProjet"></use>
+                </svg>
+                <div class="carteProjet" onclick="window.open('https://www.behance.net/gallery/256571579/Prsentation-dun-projet-DEMO-REEL', '_blank')">
+                    <div class="content">
+                        <div class="description">
+                            <h3>
+                                DEMOREEL D’UN SITE WEB
+                                <br />
+                                SUR AFTER EFFECT
+                            </h3>
+                            <h4>Projet réalisé dans le cadre du cours de production web</h4>
+
+                            <a class="button" href="#projets">Voir plus</a>
+                        </div>
+                        <a class="plus">+</a>
+                        <img src="assets/images/DemoReel.webp" alt="" />
+                    </div>
+                </div>
+                <svg class="icon bottom">
+                    <use href="#icon-SeparateurProjet"></use>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <div class="titre">
+                <h2>
+                    Contactez-moi
+                    <span>!</span>
+                </h2>
+                <svg class="icon">
+                    <use href="#icon-LigneTitre"></use>
+                </svg>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="titre">
+                            <h3>Téléphone:</h3>
+                            <svg class="icon bottom">
+                                <use href="#icon-SeparateurProjet"></use>
+                            </svg>
+                        </div>
+                        <a href="tel:4388823033" target="_blank">438-882-3033</a>
+                    </li>
+                    <li>
+                        <div class="titre">
+                            <h3>Courriel:</h3>
+                            <svg class="icon bottom">
+                                <use href="#icon-SeparateurProjet"></use>
+                            </svg>
+                        </div>
+                        <a href="mailto:morin.emilemorin@gmail.com" target="_blank">morin.emilemorin@gmail.com</a>
+                    </li>
+                    <li>
+                        <div class="titre">
+                            <h3>Autres platformes:</h3>
+                            <svg class="icon bottom">
+                                <use href="#icon-SeparateurProjet"></use>
+                            </svg>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/@EmileMorino" class="button" target="_blank">
+                                        <svg class="icon">
+                                            <use href="#icon-Youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.behance.net/milemorin4" class="button" target="_blank">
+                                        <svg class="icon">
+                                            <use href="#icon-Behance"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Jean-Michele" class="button" target="_blank">
+                                        <svg class="icon">
+                                            <use href="#icon-github"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/%C3%A9mile-morin-9a17502b5/?isSelfProfile=true" class="button" target="_blank">
+                                        <svg class="icon">
+                                            <use href="#icon-Linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="texte">
+                <h2>ÉMILE MORIN</h2>
+                <p>Aucune IA générative n’a été utilisée pour fabriquer ce coffre.
+                    Les usages éventuels propres aux projets sont indiqués dans leurs fiches.</p>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <li>
+                        <a href="main.html#">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="main.html#projets">Mes projets</a>
+                    </li>
+                    <li>
+                        <a href="#">Contactez-moi !</a>
+                    </li>
+                </nav>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Émile Morin</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script>
+    </script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header" data-component="Header" data-treshold="0.2">
+        <div class="wrapper">
+            <a class="titre" href="index.html"> ÉMILE <span>MORIN</span> <svg class="icon">
+                    <use href="#icon-SeparateurProjet"></use>
+                </svg></a>
+
+
+            <nav class="nav__menu">
+                <ul>
+                    <li>
+                        <a href="main.html#">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="main.html#projets">Mes projets</a>
+                    </li>
+                    <li>
+                        <a href="main.html#footer">Contactez-moi !</a>
+                    </li>
+                    <div class="infos">
+                        <li>
+                            <a href="https://www.youtube.com/@EmileMorino" class="button" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-Youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/milemorin4" class="button" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-Behance"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Jean-Michele" class="button" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-github"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/%C3%A9mile-morin-9a17502b5/?isSelfProfile=true" class="button" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-Linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+
+            </nav>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="erreur_404">
+        <div class="erreur_404__content">
+            <div class="wrapper">
+                <h1>PAGE NON TROUVÉE</h1>
+                <h2>La page que vous cherchez n'existe pas</h2>
+                <p>Cliquez sur ce bouton pour revenir au hub du site.</p>
+                <a href="index.html" class="button">
+                    Revenir
+                    <svg class="icon fleche">
+                        <use href="#icon-Fleche2"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="erreur_404__media">
+            <video class="video" autoplay loop muted>
+                <source src="assets/video/videoplayback.webm" type="video/webm" />
+            </video>
+        </div>
+    </section>
+    <svg style="display: none; position: absolute; width: 0; height: 0">
+        <defs>
+            <filter id="sketch-filter" x="-10%" y="-10%" width="120%" height="120%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+            </filter>
+        </defs>
+    </svg>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="texte">
+                <h2>ÉMILE MORIN</h2>
+                <p>Aucune IA générative n’a été utilisée pour fabriquer ce coffre.
+                    Les usages éventuels propres aux projets sont indiqués dans leurs fiches.</p>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <li>
+                        <a href="main.html#">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="main.html#projets">Mes projets</a>
+                    </li>
+                    <li>
+                        <a href="#">Contactez-moi !</a>
+                    </li>
+                </nav>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
