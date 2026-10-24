@@ -831,6 +831,8 @@ a:hover {
 }
 @media screen and (max-width: 1024px) {
   .cartesProjets .carteProjet .content .description {
+    height: -moz-fit-content;
+    height: fit-content;
     gap: 30px;
     padding: 0;
   }
