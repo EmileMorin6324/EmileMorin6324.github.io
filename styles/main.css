@@ -602,6 +602,11 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+.aPropos .wrapper .informations h3 {
+  font-size: var(--font-size-h4);
+  font-family: var(--font-secondary);
+  font-weight: 500;
+}
 .aPropos .wrapper .informations .information {
   padding: 30px;
   background-color: var(--color-primary);
@@ -1105,6 +1110,11 @@ a:hover {
 .hub .wrapper .hub__content .textes p {
   margin: 0;
 }
+.hub .wrapper .hub__content .textes .profil h3 {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: var(--font-size-h4);
+}
 .hub .wrapper .hub__content .interactables {
   width: 400px;
 }
@@ -1118,10 +1128,13 @@ a:hover {
   flex-direction: column;
   gap: 30px;
 }
-.hub .wrapper .hub__content .interactables .reseaux {
+.hub .wrapper .hub__content .interactables .reseaux ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .hub .wrapper .hub__content .interactables .reseaux .button {
   display: flex;
@@ -1230,14 +1243,36 @@ header .wrapper .button {
   max-height: 40px;
   display: flex;
 }
-header .wrapper nav ul,
-header .wrapper nav .infos {
+@media screen and (max-width: 1024px) {
+  header .wrapper .nav__menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+header .wrapper nav {
   display: flex;
   gap: 30px;
 }
-header .wrapper nav ul li,
-header .wrapper nav .infos li {
+header .wrapper nav ul {
+  display: flex;
+  gap: 30px;
+}
+header .wrapper nav ul li {
   list-style-type: none;
+}
+header .wrapper nav .reseaux {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  header .wrapper nav .reseaux {
+    flex-direction: row;
+  }
+}
+header .wrapper nav ul:nth-child(n+4) {
+  display: block;
 }
 header .wrapper .titre {
   font-family: var(--font-primary);
@@ -1509,23 +1544,23 @@ footer .wrapper .navigation {
   flex-direction: column;
   gap: 30px;
 }
-footer .wrapper .navigation nav {
+footer .wrapper .navigation ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 @media screen and (max-width: 1024px) {
-  footer .wrapper .navigation nav {
+  footer .wrapper .navigation ul {
     flex-direction: row;
   }
 }
 @media screen and (max-width: 480px) {
-  footer .wrapper .navigation nav {
+  footer .wrapper .navigation ul {
     flex-direction: column;
   }
 }
-footer .wrapper .navigation nav li {
+footer .wrapper .navigation ul li {
   list-style-type: none;
 }
 footer .wrapper .navigation .reseaux {
