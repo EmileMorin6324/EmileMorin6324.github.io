@@ -577,6 +577,7 @@ a:hover {
   position: absolute;
   width: 100%;
   font-size: 140px;
+  height: 30px;
   display: block;
 }
 @media screen and (max-width: 1024px) {
@@ -642,6 +643,7 @@ a:hover {
 .aPropos .wrapper .informations .information .titre .icon {
   display: flex;
   align-self: center;
+  height: 9px;
   position: absolute;
   width: 285px;
   font-size: 140px;
@@ -703,6 +705,9 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.aPropos .wrapper .informations .reste .block .titre .icon {
+  height: 9px;
 }
 .aPropos .wrapper .informations .reste .block .logiciels {
   display: flex;
@@ -1187,6 +1192,7 @@ a:hover {
   margin-bottom: 60px;
 }
 .projets .wrapper .titre .icon {
+  height: 30px;
   display: flex;
   align-self: center;
   position: absolute;
@@ -1619,6 +1625,7 @@ footer .wrapper .navigation .reseaux .button:hover {
   position: absolute;
   width: 100%;
   font-size: 140px;
+  height: 40px;
   max-height: 50px;
   display: block;
 }
@@ -1698,6 +1705,7 @@ footer .wrapper .navigation .reseaux .button:hover {
   position: absolute;
   top: 0;
   left: 0;
+  height: auto;
   width: 300px;
   font-size: 200px;
   max-height: 80px;
